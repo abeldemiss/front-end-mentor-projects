@@ -1,0 +1,95 @@
+* {
+  font-family: "Karla", sans-serif;
+  padding: 10px;
+}
+
+.box {
+  width: 100%;
+  border-radius: 9px;
+  padding-right: 35px;
+  padding-left: 35px;
+  padding-bottom: 0;
+  box-sizing: border-box;
+  background-color: white;
+  box-shadow: outset 120px 80px 40px 20px rgb(48, 48, 48);
+}
+
+body {
+  background-color: hsl(0, 4%, 89%);
+}
+
+.column {
+  flex: 50%;
+}
+
+.column-one {
+  float: left;
+  background-color: hsl(179, 62%, 43%);
+  width: 100%;
+}
+
+.column-two {
+  float: left;
+  width: 100%;
+  background-color: hsl(179, 54%, 56%);
+}
+
+.row {
+  display: flex;
+}
+
+.heading {
+  font-size: 23px;
+  font-weight: 700;
+  color: hsl(179, 62%, 43%);
+}
+
+.subhead {
+  color: hsl(71, 73%, 54%);
+}
+
+.btn {
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  font-size: 1em;
+  font-weight: 900;
+  padding: 0.8em;
+  padding-left: 6em;
+  padding-right: 6em;
+  border-radius: 8px;
+  border: solid;
+  border-color: hsl(71, 73%, 54%);
+  cursor: pointer;
+  box-shadow: outset 120px 80px 40px 20px rgb(48, 48, 48);
+}
+
+.top-desc {
+  color: hsl(0, 0%, 57%);
+  font-size: 15px;
+}
+
+.mth-desc,
+.dllr,
+.col-head {
+  color: white;
+}
+
+.pm {
+  color: hsl(216, 34%, 81%);
+  font-size: 15px;
+}
+
+ul {
+  list-style: none;
+  font-size: 14px;
+  color: hsl(204, 43%, 93%);
+  line-height: 0%;
+}
+
+.dllr {
+  font-size: 25px;
+}
+
+h2 {
+  font-size: 16px;
+}
