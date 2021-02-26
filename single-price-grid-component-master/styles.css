@@ -1,95 +1,141 @@
 * {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
   font-family: "Karla", sans-serif;
-  padding: 10px;
+  font-size: 16px;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 30px;
+  background-color: hsl(204, 43%, 93%);
 }
 
 .box {
-  width: 100%;
-  border-radius: 9px;
-  padding-right: 35px;
-  padding-left: 35px;
-  padding-bottom: 0;
-  box-sizing: border-box;
+  display: grid;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 8px;
+  box-shadow: 0px 0px 14px 1px #00000024;
+  overflow: hidden;
+}
+
+.grid-one {
   background-color: white;
-  box-shadow: outset 120px 80px 40px 20px rgb(48, 48, 48);
+  padding: 40px;
+  border-radius: 5px 5px 0px 0px;
 }
 
-body {
-  background-color: hsl(0, 4%, 89%);
-}
-
-.column {
-  flex: 50%;
-}
-
-.column-one {
-  float: left;
-  background-color: hsl(179, 62%, 43%);
-  width: 100%;
-}
-
-.column-two {
-  float: left;
-  width: 100%;
-  background-color: hsl(179, 54%, 56%);
-}
-
-.row {
-  display: flex;
-}
-
-.heading {
-  font-size: 23px;
+.grid-one h1 {
+  font-size: 1.5rem;
   font-weight: 700;
   color: hsl(179, 62%, 43%);
+  margin-bottom: 15px;
 }
 
-.subhead {
+.grid-one h2 {
+  font-size: 1rem;
   color: hsl(71, 73%, 54%);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.grid-one p {
+  color: hsl(218, 22%, 67%);
+  font-size: 15px;
+  line-height: 1.5rem;
+  margin-left: 0;
+}
+
+.grid-two {
+  padding: 30px;
+  background-color: hsl(179, 62%, 43%);
+  border-radius: 0px 0px 0px 5px;
+}
+
+.grid-two h2 {
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.grid-two p {
+  color: white;
+  margin-top: 10px;
+  margin-bottom: none;
+}
+
+.dollar {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.per-month {
+  margin-left: 10px;
+  color: hsl(204, 43%, 93%);
 }
 
 .btn {
   background-color: hsl(71, 73%, 54%);
   color: white;
-  font-size: 1em;
-  font-weight: 900;
-  padding: 0.8em;
-  padding-left: 6em;
-  padding-right: 6em;
+  width: 100%;
+  text-align: center;
+  font-size: 1.2rem;
+  display: inline-block;
+  font-weight: 700;
+  padding: 14px;
+  margin-top: 37.5px;
   border-radius: 8px;
-  border: solid;
-  border-color: hsl(71, 73%, 54%);
+  border: none;
   cursor: pointer;
-  box-shadow: outset 120px 80px 40px 20px rgb(48, 48, 48);
+  text-decoration: none;
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  box-shadow: 0px 0px 70px 70px #00000024;
 }
 
-.top-desc {
-  color: hsl(0, 0%, 57%);
-  font-size: 15px;
+.btn:hover {
+  background: hsl(71, 80%, 58%);
 }
 
-.mth-desc,
-.dllr,
-.col-head {
+.grid-three {
+  padding: 30px;
+  background-color: hsl(179, 54%, 56%);
+  border-radius: 0px 0px 5px 0px;
+}
+
+.grid-three h2 {
   color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
 }
 
-.pm {
-  color: hsl(216, 34%, 81%);
-  font-size: 15px;
-}
-
-ul {
+.grid-three ul {
   list-style: none;
   font-size: 14px;
   color: hsl(204, 43%, 93%);
-  line-height: 0%;
+  line-height: 1.4rem;
 }
 
-.dllr {
-  font-size: 25px;
-}
-
-h2 {
-  font-size: 16px;
+@media only screen and (min-width: 768px) {
+  .box {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-one {
+    grid-area: 1/1/2/3;
+  }
+  .grid-two,
+  .grid-three {
+    grid-row: 2;
+  }
 }
