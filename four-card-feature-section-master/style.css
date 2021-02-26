@@ -1,6 +1,5 @@
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -13,13 +12,18 @@ html {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  max-width: 1440px;
+  max-width: 1140px;
+  justify-content: center;
 }
 
 header {
   text-align: center;
   padding: 50px;
-  margin: 50px auto;
+  margin: auto;
+}
+
+header p {
+  font-size: 17px;
 }
 
 .first {
@@ -28,6 +32,7 @@ header {
 
 .second {
   font-weight: 600;
+  padding-bottom: 20px;
 }
 
 p {
@@ -36,19 +41,22 @@ p {
   color: hsl(229, 6%, 66%);
 }
 
+h1 {
+  color: hsl(234, 12%, 34%);
+}
+
 h2 {
   color: hsl(234, 12%, 34%);
 }
 
 .card {
-  display: grid;
-  align-items: center;
-  padding: 1.8em;
+  padding: 30px;
   width: 350px;
+  position: relative;
   background-color: white;
-  border-radius: 8px;
-  overflow: hidden;
+  border-radius: 5px;
   margin: 15px;
+  overflow: hidden;
   box-shadow: 0px 0px 14px 1px #00000024;
 }
 
@@ -59,4 +67,34 @@ h2 {
 
 .card p {
   margin: 15px 0 30px;
+}
+
+.card-one {
+  border-style: solid;
+  border-color: hsl(180, 62%, 55%) transparent transparent transparent;
+}
+
+.card-two {
+  border-style: solid;
+  border-color: hsl(0, 78%, 62%) transparent transparent transparent;
+}
+
+.card-three {
+  border-style: solid;
+  border-color: hsl(34, 97%, 64%) transparent transparent transparent;
+}
+
+.card-four {
+  border-style: solid;
+  border-color: hsl(212, 86%, 64%) transparent transparent transparent;
+}
+
+.card-stack {
+  transform: translateY(50%);
+}
+
+@media (max-width: 775px) {
+  .card-stack {
+    transform: translateY(0);
+  }
 }
