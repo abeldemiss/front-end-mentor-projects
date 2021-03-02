@@ -1,0 +1,51 @@
+html {
+  margin: 0;
+  padding: 0;
+  width: 1440px;
+  height: 800px;
+}
+
+body {
+  background-color: hsl(257, 40%, 49%);
+  background-image: url(images/bg-desktop.svg);
+  width: inherit;
+  height: inherit;
+  color: white;
+}
+
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+button {
+  font-family: "Open Sans", sans-serif;
+}
+
+header {
+  padding: 20px 10px;
+  margin: 20px 10px;
+}
+
+.illustration {
+  margin: auto;
+}
+
+.content {
+  width: 535px;
+  justify-content: center;
+}
+
+footer {
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    justify-content: space-around;
+  }
+}
