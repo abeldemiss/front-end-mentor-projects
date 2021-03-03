@@ -1,15 +1,19 @@
+* {
+  box-sizing: border-box;
+}
+
 html {
   margin: 0;
   padding: 0;
-  width: 1440px;
-  height: 800px;
 }
 
 body {
   background-color: hsl(257, 40%, 49%);
   background-image: url(images/bg-desktop.svg);
-  width: inherit;
-  height: inherit;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 100%;
+  height: 100%;
   color: white;
 }
 
@@ -23,29 +27,28 @@ button {
 }
 
 header {
-  padding: 20px 10px;
-  margin: 20px 10px;
+  padding: 40px;
 }
 
 .illustration {
-  margin: auto;
+  margin: 0 auto;
+  min-width: 800px;
 }
 
 .content {
-  width: 535px;
-  justify-content: center;
+  padding-top: 60px;
 }
 
 footer {
   right: 0;
   bottom: 0;
   width: 100%;
-  text-align: center;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 1440px) {
   .container {
+    margin: 0 auto;
     display: flex;
-    justify-content: space-around;
+    justify-content: center;
   }
 }
